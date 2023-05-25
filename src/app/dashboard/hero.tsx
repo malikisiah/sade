@@ -10,7 +10,7 @@ export default function Hero() {
       <div className='hero-content text-center text-neutral-content'>
         <div className='max-w-md'>
           <h1 className='mb-5 text-9xl font-bold'>S A D E</h1>
-          <p className='mb-5 text-xl'>
+          <p className='mb-5 text-xl font-bold'>
             A curated collection of music, photos, and more...
           </p>
           <button className='btn btn-content'>See More</button>

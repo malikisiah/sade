@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 type navbarProps = {
   name: string;
   image: string;
@@ -8,9 +9,24 @@ export default function Navbar(props: navbarProps) {
   return (
     <div className='navbar border-b-2 border-neutral bg-base-100 sticky top-0 z-0 px-5'>
       <div className='flex-1 hidden lg:flex'>
-        <a className='btn btn-ghost normal-case text-xl'>Music</a>
-        <a className='btn btn-ghost normal-case text-xl'>Gallery</a>
-        <a className='btn btn-ghost normal-case text-xl'>Biography</a>
+        <Link
+          className='btn btn-ghost normal-case text-xl'
+          href='/dashboard/musicPage'
+        >
+          Music
+        </Link>
+        <Link
+          className='btn btn-ghost normal-case text-xl'
+          href='/dashboard/Gallery'
+        >
+          Gallery
+        </Link>
+        <Link
+          className='btn btn-ghost normal-case text-xl'
+          href='/dashboard/Biography'
+        >
+          Biography
+        </Link>
       </div>
       <div className='flex-1 dropdown'>
         <label tabIndex={0} className='btn btn-ghost lg:hidden'>
@@ -34,7 +50,7 @@ export default function Navbar(props: navbarProps) {
           className='menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52'
         >
           <li>
-            <a>Music</a>
+            <Link href='/dashboard/musicPage'>Music</Link>
           </li>
           <li>
             <a>Gallery</a>

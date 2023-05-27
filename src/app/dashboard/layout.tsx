@@ -1,13 +1,12 @@
 import { getServerSession } from "next-auth";
 import Navbar from "./navBar";
-import { authOptions } from "../api/auth/[...nextauth]/route";
 
 export default async function DashboardLayout({
   children, // will be a page or nested layout
 }: {
   children: React.ReactNode;
 }) {
-  const session = await getServerSession(authOptions);
+  const session = await getServerSession();
 
   const name = session?.user?.name as string;
   const image = session?.user?.image as string;

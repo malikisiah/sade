@@ -125,7 +125,10 @@ export default function Navbar(props: navbarProps) {
       <div className='flex-none gap-2'>
         <p className='text-lg'> Hello, {props.name}</p>
         <div className='dropdown dropdown-end'>
-          <label tabIndex={0} className='btn btn-ghost btn-circle avatar'>
+          <label
+            tabIndex={0}
+            className='btn btn-ghost btn-circle btn-lg avatar'
+          >
             <div className='w-32 rounded-full'>
               <Image
                 src={props.image}

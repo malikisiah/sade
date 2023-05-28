@@ -6,11 +6,6 @@ import { redirect } from "next/navigation";
 export default function Home() {
   const session = useSession();
   console.log(session);
-
-  if (session.status === "authenticated") {
-    redirect("/dashboard");
-  }
-
   return (
     <div
       className='hero min-h-screen'

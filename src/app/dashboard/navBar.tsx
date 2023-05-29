@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ToggleSwitch from "./toggle";
 type navbarProps = {
   name: string;
   image: string;
@@ -122,8 +123,11 @@ export default function Navbar(props: navbarProps) {
           </li>
         </ul>
       </div>
+
       <div className='flex-none gap-2'>
-        <p className='text-lg'> Hello, {props.name}</p>
+        <div className='pr-8'>
+          <ToggleSwitch></ToggleSwitch>
+        </div>
         <div className='dropdown dropdown-end'>
           <label
             tabIndex={0}

@@ -11,7 +11,7 @@ export default async function DashboardLayout({
   const name = session?.user?.name as string;
   const image = session?.user?.image as string;
   return (
-    <section>
+    <section data-theme='luxury'>
       {/* Include shared UI here e.g. a header or sidebar */}
       <Navbar name={name} image={image}></Navbar>
 

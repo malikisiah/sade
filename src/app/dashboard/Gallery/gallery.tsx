@@ -4,6 +4,7 @@ import Link from "next/link";
 type ImageObject = {
   src: string;
   alt: string;
+  id: string;
 };
 
 type GalleryProps = {
@@ -15,11 +16,11 @@ export default function Gallery({ images }: GalleryProps) {
     <div className='container mx-auto px-5 py-2 lg:px-32 lg:pt-12 '>
       <div className='-m-1 flex flex-wrap md:-m-2'>
         {images.map((image, index) => (
-          <div key={index} className='flex w-1/3 flex-wrap'>
+          <div key={image.id} className='flex w-1/3 flex-wrap'>
             <div className='w-full p-1 md:p-2 relative'>
               {/* Image */}
               <label
-                htmlFor={`modal-${index}`}
+                htmlFor={`modal-${image.id}`}
                 className='block cursor-pointer'
               >
                 <Image
@@ -36,13 +37,13 @@ export default function Gallery({ images }: GalleryProps) {
               {/* Modal */}
               <input
                 type='checkbox'
-                id={`modal-${index}`}
+                id={`modal-${image.id}`}
                 className='modal-toggle'
               />
               <div className='modal'>
                 <div className=' modal-box relative max-w-3xl'>
                   <label
-                    htmlFor={`modal-${index}`}
+                    htmlFor={`modal-${image.id}`}
                     className='btn btn-sm btn-circle absolute right-2 top-2'
                   >
                     ✕

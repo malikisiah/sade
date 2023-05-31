@@ -1,62 +1,106 @@
 import Gallery from "./gallery";
 
 export default function GalleryPage() {
-  const images = [
+  const firstSet = [
     {
       src: "/sade1.jpg",
       alt: "Image 1",
+      id: "",
     },
 
     {
       src: "/sade2.jpg",
       alt: "Image 2",
+      id: "",
     },
 
     {
       src: "/sade3.jpg",
       alt: "Image 3",
+      id: "",
     },
 
     {
       src: "/sade4.jpg",
       alt: "Image 4",
+      id: "",
     },
 
     {
       src: "/sade5.jpg",
       alt: "Image 5",
+      id: "",
     },
 
     {
-      src: "/wp2800275-sade-adu-wallpaper.jpg",
+      src: "/rs-9031-20130116-sade-624x420-1358364478.webp",
       alt: "Image 6",
+      id: "",
     },
 
     // ... add the rest of the images here
   ];
 
-  const images2 = [
+  firstSet.forEach((img, idx) => (img.id = `firstSet-${idx}`));
+
+  const secondSet = [
     {
-      src: "/sade1.jpg",
+      src: "/download.webp",
+      alt: "Image 2",
+      id: "",
+    },
+
+    {
+      src: "/Sade-Press.jpg",
       alt: "Image 1",
+      id: "",
+    },
+    {
+      src: "/20201005-sade-01.jpg",
+      alt: "Image 1",
+      id: "",
+    },
+
+    {
+      src: "/Sade-Adu-White-Shirt.webp",
+      alt: "Image 1",
+      id: "",
+    },
+
+    {
+      src: "/Sade-Press-Photo-1-e1599372789168.webp",
+      alt: "Image 6",
+      id: "",
+    },
+
+    {
+      src: "/beauty-2015-12-sade-braid-main.webp",
+      alt: "Image 6",
+      id: "",
     },
 
     // ... add the rest of the images here
   ];
+
+  secondSet.forEach((img, idx) => (img.id = `secondSet-${idx}`));
   return (
     <>
-      <p className='text-center pt-10 font-bold text-2xl pb-6'>
-        The embodiment of grace and sophistication
-      </p>
+      <div className='pb-10'>
+        <p className='text-center pt-10 font-bold text-2xl '>
+          The embodiment of grace and sophistication
+        </p>
 
-      <Gallery images={images}></Gallery>
+        <Gallery images={firstSet}></Gallery>
+      </div>
 
-      <p className='text-center pt-10 font-bold text-2xl pb-6'>
-        Beauty is not merely a visual concept, it is a rhythm, a melody, an
-        emotion that transcends the realms of physical creation
-      </p>
+      <div className='pb-10'>
+        <p className='text-center pt-10 font-bold text-2xl '>
+          Beauty is not merely a visual concept, it is a rhythm, a melody, an
+          emotion that transcends the realms of physical creation
+        </p>
 
-      <Gallery images={images2}></Gallery>
+        <Gallery images={secondSet}></Gallery>
+      </div>
     </>
   );
 }

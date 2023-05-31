@@ -36,7 +36,7 @@ export default function Navbar(props: navbarProps) {
         <label tabIndex={0} className='btn btn-ghost lg:hidden'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            className='h-5 w-5'
+            className='h-7 w-7'
             fill='none'
             viewBox='0 0 24 24'
             stroke='currentColor'
@@ -124,8 +124,8 @@ export default function Navbar(props: navbarProps) {
         </ul>
       </div>
 
-      <div className='flex-none gap-2'>
-        <div className='pr-8'>
+      <div className='flex-none gap-2 pr-4'>
+        <div className='pr-6'>
           <ToggleSwitch></ToggleSwitch>
         </div>
         <div className='dropdown dropdown-end'>

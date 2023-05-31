@@ -8,7 +8,7 @@ type navbarProps = {
 
 export default function Navbar(props: navbarProps) {
   return (
-    <div className='navbar border-b-2 border-neutral bg-base-100 sticky top-0 z-0 px-5'>
+    <div className='navbar border-b-2 border-neutral bg-base-100 sticky top-0 z-50 px-5'>
       <div className='flex-1 hidden lg:flex'>
         <Link className='btn btn-ghost normal-case text-xl' href='/dashboard'>
           Home

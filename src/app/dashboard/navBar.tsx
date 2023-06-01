@@ -8,7 +8,7 @@ type navbarProps = {
 
 export default function Navbar(props: navbarProps) {
   return (
-    <div className='navbar border-b-2 border-neutral bg-base-100 sticky top-0 z-50 px-5'>
+    <div className='navbar border-b-2 border-black bg-base-100 sticky top-0 z-50 px-5'>
       <div className='flex-1 hidden lg:flex'>
         <Link className='btn btn-ghost normal-case text-xl' href='/dashboard'>
           Home
@@ -147,6 +147,11 @@ export default function Navbar(props: navbarProps) {
             tabIndex={0}
             className='mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52'
           >
+            <p className='p-2 pb-3'>
+              {" "}
+              <span className='pr-2'> &#x1F44B; </span>
+              {props.name}
+            </p>
             <li>
               <a>Logout</a>
             </li>

@@ -1,12 +1,37 @@
+"use client";
+
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+
 export default function ToggleSwitch() {
-  const handleClick = () => {}; // maybe make an API call to update the "theme" value on the server?
+  const [theme, setTheme] = useState("lofi");
+  const router = useRouter();
+
+  const toggle = async () => {
+    if (theme === "luxury") {
+      setTheme("lofi");
+    } else {
+      setTheme("luxury");
+    }
+    await fetch("http://localhost:3000/api", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        theme,
+      }),
+    });
+
+    router.refresh();
+  };
 
   return (
     <label className='swap swap-rotate'>
-      <input type='checkbox' />
+      <input type='checkbox' onClick={toggle} />
 
       <svg
-        className='swap-on fill-current w-9 h-9'
+        className='swap-off fill-current w-9 h-9'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
       >
@@ -14,7 +39,7 @@ export default function ToggleSwitch() {
       </svg>
 
       <svg
-        className='swap-off fill-current w-9 h-9'
+        className='swap-on fill-current w-9 h-9'
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 24 24'
       >

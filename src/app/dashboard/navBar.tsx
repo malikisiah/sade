@@ -140,6 +140,7 @@ export default function Navbar(props: navbarProps) {
                 width={200}
                 height={200}
                 quality={100}
+                priority={true}
               />
             </div>
           </label>

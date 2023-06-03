@@ -86,7 +86,7 @@ export default function GalleryPage() {
   return (
     <>
       <div className='pb-10'>
-        <p className='text-center pt-10 font-bold text-2xl '>
+        <p className='text-center pt-10 font-bold text-2xl text-content '>
           The embodiment of grace and sophistication
         </p>
 

@@ -2,7 +2,13 @@ import { getServerSession } from "next-auth";
 import Navbar from "./navBar";
 
 async function getData() {
-  const res = await fetch("http://localhost:3000/api");
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+
+  if (!apiUrl) {
+    throw new Error("Invalid URL");
+  }
+
+  const res = await fetch(apiUrl);
 
   return res.json();
 }

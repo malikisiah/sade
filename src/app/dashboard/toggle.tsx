@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { revalidatePath } from "next/cache";
 
 export default function ToggleSwitch() {
   const [theme, setTheme] = useState("lofi");
@@ -22,7 +23,6 @@ export default function ToggleSwitch() {
         theme,
       }),
     });
-
     router.refresh();
   };
 

@@ -86,7 +86,7 @@ export default function GalleryPage() {
   return (
     <>
       <div className='pb-10'>
-        <p className='text-center pt-10 font-bold text-2xl text-content '>
+        <p className='text-center pt-10  text-2xl text-content '>
           The embodiment of grace and sophistication
         </p>
 
@@ -94,7 +94,7 @@ export default function GalleryPage() {
       </div>
 
       <div className='pb-10'>
-        <p className='text-center pt-10 font-bold text-2xl '>
+        <p className='text-center pt-10  text-2xl '>
           Beauty is not merely a visual concept, it is a rhythm, a melody, an
           emotion that transcends the realms of physical creation
         </p>

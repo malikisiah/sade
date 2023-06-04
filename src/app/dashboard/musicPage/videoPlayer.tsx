@@ -4,7 +4,7 @@ type vidPlayerProps = {
 
 export default function VideoPlayer(props: vidPlayerProps) {
   return (
-    <div className='flex justify-center '>
+    <div className='flex justify-center'>
       <iframe
         width='560'
         height='350'

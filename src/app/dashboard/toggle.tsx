@@ -1,29 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 export default function ToggleSwitch() {
-  const [theme, setTheme] = useState("lofi");
+  const [theme, setTheme] = useState("luxury");
   const router = useRouter();
-
-  const toggle = async () => {
-    if (theme === "luxury") {
-      setTheme("lofi");
-    } else {
-      setTheme("luxury");
-    }
-    await fetch(process.env.NEXT_PUBLIC_API_URL as string, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        theme,
-      }),
-    });
-    router.refresh();
+  const toggle = () => {
+    setTheme(theme === "luxury" ? "lofi" : "luxury");
   };
+
+  useEffect(() => {
+    const body = document.body;
+    body.setAttribute("data-theme", theme);
+  });
 
   return (
     <label className='swap swap-rotate'>

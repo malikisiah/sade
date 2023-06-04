@@ -5,7 +5,22 @@ export default async function Music() {
   return (
     <>
       <div className='pt-16 lg:mx-96'>
-        <h1 className='text-3xl font-bold pb-3'> Smooth Operator</h1>
+        <h1 className='text-3xl font-bold pb-3 flex items-center'>
+          {" "}
+          Smooth Operator{" "}
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 24 24'
+            fill='currentColor'
+            className='w-6 h-6 ml-2'
+          >
+            <path
+              fillRule='evenodd'
+              d='M19.952 1.651a.75.75 0 01.298.599V16.303a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.403-4.909l2.311-.66a1.5 1.5 0 001.088-1.442V6.994l-9 2.572v9.737a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.402-4.909l2.31-.66a1.5 1.5 0 001.088-1.442V9.017 5.25a.75.75 0 01.544-.721l10.5-3a.75.75 0 01.658.122z'
+              clipRule='evenodd'
+            />
+          </svg>
+        </h1>
         <div className='text-lg pb-14'>
           <p>
             "Smooth Operator" is perhaps Sade's most iconic song and a defining
@@ -49,7 +64,22 @@ export default async function Music() {
           <VideoPlayer vidID='4TYv2PhG89A'></VideoPlayer>
         </div>
 
-        <h1 className='text-3xl font-bold pb-3'> Like a Tattoo</h1>
+        <h1 className='text-3xl font-bold pb-3 flex items-center'>
+          {" "}
+          Like a Tattoo{" "}
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 24 24'
+            fill='currentColor'
+            className='w-6 h-6 ml-2'
+          >
+            <path
+              fillRule='evenodd'
+              d='M19.952 1.651a.75.75 0 01.298.599V16.303a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.403-4.909l2.311-.66a1.5 1.5 0 001.088-1.442V6.994l-9 2.572v9.737a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.402-4.909l2.31-.66a1.5 1.5 0 001.088-1.442V9.017 5.25a.75.75 0 01.544-.721l10.5-3a.75.75 0 01.658.122z'
+              clipRule='evenodd'
+            />
+          </svg>
+        </h1>
 
         <div className='text-lg pb-14'>
           <p>
@@ -85,7 +115,21 @@ export default async function Music() {
           <br></br>
           <VideoPlayer vidID='oP4sBeV7llE' />
         </div>
-        <h1 className='text-3xl font-bold pb-3'>Love is Stronger Than Pride</h1>
+        <h1 className='text-3xl font-bold pb-3 flex items-center'>
+          Love Is Stronger Than Pride{" "}
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 24 24'
+            fill='currentColor'
+            className='w-6 h-6 ml-2'
+          >
+            <path
+              fillRule='evenodd'
+              d='M19.952 1.651a.75.75 0 01.298.599V16.303a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.403-4.909l2.311-.66a1.5 1.5 0 001.088-1.442V6.994l-9 2.572v9.737a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.402-4.909l2.31-.66a1.5 1.5 0 001.088-1.442V9.017 5.25a.75.75 0 01.544-.721l10.5-3a.75.75 0 01.658.122z'
+              clipRule='evenodd'
+            />
+          </svg>
+        </h1>
         <div className='text-lg pb-14'>
           <p>
             "Love is Stronger Than Pride" is an enduring classic from Sade's

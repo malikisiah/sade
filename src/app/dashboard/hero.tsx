@@ -1,4 +1,11 @@
+"use client";
 export default function Hero() {
+  const scrollToNextSection = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  };
   return (
     <div
       className='hero min-h-screen'
@@ -13,7 +20,9 @@ export default function Hero() {
           <p className='mb-5 text-xl font-bold'>
             A curated collection of music, photos, and more...
           </p>
-          <button className='btn btn-content'>See More</button>
+          <button className='btn btn-content' onClick={scrollToNextSection}>
+            See More
+          </button>
         </div>
       </div>
     </div>

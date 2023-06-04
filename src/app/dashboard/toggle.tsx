@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { revalidatePath } from "next/cache";
 
 export default function ToggleSwitch() {
   const [theme, setTheme] = useState("lofi");
@@ -14,7 +13,7 @@ export default function ToggleSwitch() {
     } else {
       setTheme("luxury");
     }
-    await fetch("http://localhost:3000/api", {
+    await fetch(process.env.NEXT_PUBLIC_API_URL as string, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

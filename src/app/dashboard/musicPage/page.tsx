@@ -22,44 +22,42 @@ export default async function Music() {
           </svg>
         </h1>
         <div className='text-lg pb-14'>
-          <p>
+          <p className='pb-4'>
             "Smooth Operator" is perhaps Sade's most iconic song and a defining
             piece in her discography. Released in 1984 as a part of the debut
             album "Diamond Life", the track quickly catapulted Sade to
             international fame.
           </p>
-          <br></br>
 
-          <p>
+          <p className='pb-4'>
             The song is a jazz-infused soul track that perfectly embodies the
             band's smooth and sultry style. The lyrics tell the story of a
             stylish and sophisticated man who lives a high-profile and
             fast-paced lifestyle, constantly in the pursuit of romantic
             conquests.
           </p>
-          <br></br>
-          <p>
+
+          <p className='pb-4'>
             Sade Adu, the lead vocalist, has said that the song's inspiration
             comes from her experiences living in London, observing people and
             their relationships. The character of the "smooth operator" is an
             amalgamation of different individuals she encountered.
           </p>
-          <br></br>
-          <p>
+
+          <p className='pb-4'>
             Some interesting trivia about the song is that it remains one of
             Sade's most popular tracks to this day and has been covered by
             various artists in diverse genres. It also ranks high on various
             'best-of' lists for its unique blend of soul, jazz, and pop
             elements.
           </p>
-          <br></br>
-          <p>
+
+          <p className='pb-4'>
             "Smooth Operator" showcases Sade's distinctive, sultry voice, which
             along with the smooth saxophone solos, creates an atmosphere of
             sophistication and allure that has stood the test of time. This song
             set the bar high for Sade's future works and remains a fan favorite.
           </p>
-          <br></br>
 
           <VideoPlayer vidID='4TYv2PhG89A'></VideoPlayer>
         </div>
@@ -82,13 +80,13 @@ export default async function Music() {
         </h1>
 
         <div className='text-lg pb-14'>
-          <p>
+          <p className='pb-4'>
             "Like a Tattoo" is a deeply poignant and emotionally charged song
             from Sade's third studio album, "Love Deluxe," which was released in
             1992.
           </p>
-          <br></br>
-          <p>
+
+          <p className='pb-4'>
             This beautifully crafted ballad is a true testament to Sade's
             capacity to evoke emotion through her music. The song narrates a
             tale of a war veteran, carrying the pain of his past like a
@@ -96,23 +94,23 @@ export default async function Music() {
             how emotional scars remain with us, just like a tattoo, even though
             they might not be visible on the surface.
           </p>
-          <br></br>
-          <p>
+
+          <p className='pb-4'>
             Sade's evocative vocals shine through in this track, backed by the
             soft, melancholic tunes of saxophone and gentle percussion,
             providing a haunting and lingering backdrop. It's a brilliant
             example of Sade's signature style that blends elements of soul,
             jazz, and R&amp;B.
           </p>
-          <br></br>
-          <p>
+
+          <p className='pb-4'>
             What makes "Like a Tattoo" truly remarkable is its timeless
             relevance. It touches upon themes of post-traumatic stress, loss,
             and resilience that resonate with listeners across different
             generations. It's a testament to the power of Sade's music and her
             ability to connect with audiences on a deeply emotional level.
           </p>
-          <br></br>
+
           <VideoPlayer vidID='oP4sBeV7llE' />
         </div>
         <h1 className='text-3xl font-bold pb-3 flex items-center'>
@@ -131,32 +129,29 @@ export default async function Music() {
           </svg>
         </h1>
         <div className='text-lg pb-14'>
-          <p>
+          <p className='pb-4'>
             "Love is Stronger Than Pride" is an enduring classic from Sade's
             third studio album, "Stronger Than Pride," released in 1988. The
             track showcases Sade's signature minimalist style blended with
             elements of soul, jazz, and Afro-Caribbean rhythms.
           </p>
-          <br></br>
 
-          <p>
+          <p className='pb-4'>
             This heartfelt ballad is a captivating expression of vulnerability
             and the power of love. The lyrics explore the complexities of love,
             particularly when it comes to swallowing one's pride to admit love
             for another, despite differences and hardships.
           </p>
-          <br></br>
 
-          <p>
+          <p className='pb-4'>
             Sade's hauntingly beautiful vocals take center stage, exuding a
             poignant and melancholic aura that perfectly resonates with the
             song's theme. The production is understated yet rich, with a
             carefully orchestrated arrangement that allows Sade's voice to truly
             shine.
           </p>
-          <br></br>
 
-          <p>
+          <p className='pb-4'>
             "Love is Stronger Than Pride" is often lauded for its timeless and
             universal message, demonstrating how love often requires sacrifice
             and humility. It remains an iconic piece in Sade's discography and

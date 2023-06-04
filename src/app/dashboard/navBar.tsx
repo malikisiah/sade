@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import ToggleSwitch from "./toggle";
+import { signOut } from "next-auth/react";
 type navbarProps = {
   name: string;
   image: string;
@@ -154,7 +156,13 @@ export default function Navbar(props: navbarProps) {
               {props.name}
             </p>
             <li>
-              <a>Logout</a>
+              <button
+                onClick={() =>
+                  signOut({ callbackUrl: "http://localhost:3000/" })
+                }
+              >
+                Logout
+              </button>
             </li>
           </ul>
         </div>

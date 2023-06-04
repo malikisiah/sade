@@ -1,13 +1,8 @@
 "use client";
-import { useSession } from "next-auth/react";
 
-import { redirect } from "next/navigation";
+import { signIn } from "next-auth/react";
 
 export default function Home() {
-  const session = useSession();
-  if (session.status === "authenticated") {
-    redirect("/dashboard");
-  }
   return (
     <div
       className='hero min-h-screen'
@@ -20,12 +15,14 @@ export default function Home() {
         <div className='max-w-md'>
           <h1 className='mb-5 text-9xl font-bold'>S A D E </h1>
           <p className='mb-5 text-xl'>Please Sign With Spotify </p>
-          <a
+
+          <button
             className='btn btn-content normal-case'
-            href='http://localhost:3000/api/auth/signin'
+            onClick={() => signIn("spotify", { callbackUrl: "/dashboard" })}
           >
-            Sign in
-          </a>
+            {" "}
+            Sign In
+          </button>
         </div>
       </div>
     </div>
